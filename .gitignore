@@ -1,0 +1,17 @@
+# Node modules
+node_modules/
+
+# Build output
+/dist/
+/build/
+
+# Dependency directories
+/coverage/
+
+# Others
+.DS_Store
+*.log
+*.env
+*.tmp
+*.bak
+*.swp
