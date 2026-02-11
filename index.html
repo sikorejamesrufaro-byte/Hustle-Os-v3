@@ -4,13 +4,49 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hustle OS Elite v3</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
-    <h1>Welcome to Hustle OS Elite v3</h1>
-    <p>This is your application for powerful computing and efficiency.</p>
-    <script>
-        // Application code can go here
-        console.log('Hustle OS Elite v3 is running!');
-    </script>
+    <header>
+        <h1>Welcome to Hustle OS Elite v3</h1>
+    </header>
+    <main>
+        <section id="sales">
+            <h2>Log Sales</h2>
+            <form id="salesForm">
+                <label for="saleAmount">Amount:</label>
+                <input type="number" id="saleAmount" required>
+                <label for="saleDate">Date:</label>
+                <input type="date" id="saleDate" required>
+                <button type="submit">Log Sale</button>
+            </form>
+        </section>
+
+        <section id="expenses">
+            <h2>Log Expenses</h2>
+            <form id="expensesForm">
+                <label for="expenseAmount">Amount:</label>
+                <input type="number" id="expenseAmount" required>
+                <label for="expenseDate">Date:</label>
+                <input type="date" id="expenseDate" required>
+                <button type="submit">Log Expense</button>
+            </form>
+        </section>
+
+        <section id="invoices">
+            <h2>Invoices</h2>
+            <button id="generateInvoice">Generate Invoice</button>
+        </section>
+
+        <section id="reports">
+            <h2>Financial Reports</h2>
+            <button id="exportExcel">Export to Excel</button>
+            <button id="generatePDF">Generate PDF</button>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2026 Hustle OS Elite</p>
+    </footer>
 </body>
 </html>
